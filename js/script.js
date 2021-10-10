@@ -343,7 +343,7 @@ function nextQuestion(questionId) {
         $(`#${btnId}`).addClass('btn--expired');
         $(`#${btnId}`).prop('onclick', null).off('click');
         $(`#${btnId}`).removeAttr('href');
-        $(`#${btnId}`).parent().parent().parent().addClass('grayed--out');
+        $(`#${btnId}`).parent().parent().addClass('grayed--out');
         $(`#${btnId}`).parent().css( "opacity", "1" );
       }
       if(flag === 0 && --timer < 0) {
