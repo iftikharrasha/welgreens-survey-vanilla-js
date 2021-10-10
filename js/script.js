@@ -83,6 +83,49 @@ var questions = [
   },
 ];
 
+var cards = [
+    {
+      time: 'card1Time',
+      btn: 'card1Btn',
+    },
+    {
+      time: 'card2Time',
+      btn: 'card2Btn',
+    },
+    {
+      time: 'card3Time',
+      btn: 'card3Btn',
+    },
+    {
+      time: 'card4Time',
+      btn: 'card4Btn',
+    },
+    {
+      time: 'card5Time',
+      btn: 'card5Btn',
+    },
+    {
+      time: 'card6Time',
+      btn: 'card6Btn',
+    },
+    {
+      time: 'card7Time',
+      btn: 'card7Btn',
+    },
+    {
+      time: 'card8Time',
+      btn: 'card8Btn',
+    },
+    {
+      time: 'card9Time',
+      btn: 'card9Btn',
+    },
+    {
+      time: 'card10Time',
+      btn: 'card10Btn',
+    },
+  ];
+
 window.onload = function () {
       var fiveMinutes = 30 * 10;
       var display = document.querySelector('#timer');
