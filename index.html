@@ -11,7 +11,77 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <!-- top text -->
+    <header class="header text-center" id="header">
+        <h6 class="medi--16--2 text-white">Over $3,200,000 in Offer Rewards claimed so far!</h6>
+    </header>
+    <main>
+        <!--screen #1-->
+        <section class="hero" id="hero">
+            <div class="hero--banner">
+                <div class="container">
+                    <div class="hero--title text-center pt-4 pb-5">
+                        <h2 class="bold--20--2">Online Survey About</h2>
+                        <h1 class="bold--50--2 mt-2">Welgreens</h1>
+                    </div>
+                    <div class="bounty--card mt-3 mb-5" id="bounty">
+                        <div class="circle--wrapper">
+                            <div class="promo promo--sm d-flex align-items-center justify-content-center">
+                                <div class="promo--circle"></div>
+                                <img class="img-fluid" src="./img/product.png" alt="promo" id="promo--img">
+                                <img class="img-fluid" src="./img/gift icon.png" alt="box" id="box--img">
+                                <div class="progress--bar" id="progress--bar">
+                                    <div class="barOverflow">
+                                      <div class="bar" id="bar"></div>
+                                    </div>
+                                    <p class="black--16--2 bar--count"><span id="percentCount">0</span>%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero--contents" id="hero--contents">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <p class="bold--30--2">Congratulations!</p>
+                                    <p class="reg--20--2 details">Complete this short survey about <span class="bold--20">Welgreens</span> and as a thank you, you will <span class="bold--20">unlock access</span> to offers up to <span class="bold--20">$100 cash value</span>!
+                                    </p>
+                                </div>
+                                <div class="col-12 mt-3 mb-2">
+                                    <p class="bold--20--2 d-flex align-items-center justify-content-center">
+                                        <span>TIME REMAINING:<span class="timer px-2" id="timer2">5:00</span></span>
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="start--div">
+                                            <button id="surveyBtn" class="start--btn d-flex align-items-center justify-content-center" onclick="startSurvey();">
+                                                <span class="black--23">START SURVEY NOW</span>
+                                                <img class="ml-3" src="./img/arrow.svg" alt="arrow">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <p class="reg--20--2">Act Fast! Today: <span class="bold--20 date--today"></span> is the last day before this special offer expires for the year.</p> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="expired py-sm-2 text-center">
+                <p class="bold--30--2 d-flex align-items-center justify-content-center">
+                    <span class="watch mr-3">
+                        <img src="./img/timer.svg" alt="timer">
+                    </span>
+                    <span class="limited">This limited one-time offer expires in
+                        <span class="timer px-2" id="timer">5:00</span>
+                    </span>
+                </p>
+            </div>
+        </section>
+    </main>
+
     <script text="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
     <script text="text/javascript" src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+  
+:root {
+    --color_white: #FFFFFF;
+    --color_red: #D04500;
+    --color_green: #4CAF50;
+    --color_blue: #363563;
+    --color_black: #000000;
+    --color_main_bg: #F8F8F8;
+
+    --color_start_btn_bg:#4CAF50;
+    --color_start_btn_color:#FFFFFF;
+    --color_start_btn_stroke:#73c176;
+    --color_start_btn_hover:#2f9b33;
+
+    --color_ques_btn_bg:#363563;
+    --color_ques_btn_color:#FFFFFF;
+    --color_ques_btn_stroke:#737292;
+    --color_ques_btn_hover:#6B6A9F;
+
+    --color_product_btn_bg:#4CAF50;
+    --color_product_btn_color:#FFFFFF;
+    --color_product_btn_stroke:#73c176;
+    --color_product_btn_hover:#2f9b33;
+
+    --font1: 'Source Sans Pro', sans-serif;
+    --font2: 'Roboto', sans-serif;
+}
+
+$color_white: var(--color_white);
+$color_red: var(--color_red);
+$color_green: var(--color_green);
+$color_blue: var(--color_blue);
+$color_black: var(--color_black);
+$color_main_bg: var(--color_main_bg);
+
+$color_start_btn_bg: var(--color_start_btn_bg);
+$color_start_btn_color: var(--color_start_btn_color);
+$color_start_btn_stroke: var(--color_start_btn_stroke);
+$color_start_btn_hover: var(--color_start_btn_hover);
+
+$color_ques_btn_bg: var(--color_ques_btn_bg);
+$color_ques_btn_color: var(--color_ques_btn_color);
+$color_ques_btn_stroke: var(--color_ques_btn_stroke);
+$color_ques_btn_hover: var(--color_ques_btn_hover);
+
+$color_product_btn_bg: var(--color_product_btn_bg);
+$color_product_btn_color: var(--color_product_btn_color);
+$color_product_btn_stroke: var(--color_product_btn_stroke);
+$color_product_btn_hover: var(--color_product_btn_hover);
+$font1: var(--font1);
+$font2: var(--font2);
+  
