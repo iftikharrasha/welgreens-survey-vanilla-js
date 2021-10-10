@@ -457,8 +457,6 @@ a, select, input, textarea, button {
 .header {
   background-color: var(--color_blue);
   padding: 1rem 1.25rem;
-  -webkit-animation: fadeIn .5s;
-          animation: fadeIn .5s;
 }
 
 /* hero starts */
@@ -1134,6 +1132,131 @@ a, select, input, textarea, button {
 @media (max-width: 320px) {
   .hero .expired p .limited img {
     width: 1rem;
+  }
+}
+
+.offers {
+  display: none;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
+  background-color: var(--color_white);
+}
+
+.offers .offers--top {
+  background: url(../img/pattern-offer.png), #CEE6FE;
+}
+
+.offers .offers--top .coupon--bg {
+  background-color: var(--color_white);
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 0.2rem;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+@media (max-width: 575.98px) {
+  .offers .offers--top .coupon--bg {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .offers .offers--top .coupon--bg {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .offers .offers--top .coupon--bg {
+    width: 65%;
+  }
+}
+
+.offers .offers--top .coupon--bg .coupon {
+  color: var(--color_green);
+  border: 3px dashed var(--color_green);
+  padding: 0.3rem;
+  width: 85%;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+@media (max-width: 575.98px) {
+  .offers .offers--top .coupon--bg .coupon {
+    width: 90%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .offers .offers--top .coupon--bg .coupon {
+    width: 75%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .offers .offers--top .coupon--bg .coupon p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .offers .offers--top .coupon--bg .coupon p {
+    font-size: 0.8rem;
+  }
+  .offers .offers--top .coupon--bg .coupon p span {
+    font-size: 0.8rem;
+  }
+}
+
+.offers .offers--top .coupon--bg .fadeInUp {
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

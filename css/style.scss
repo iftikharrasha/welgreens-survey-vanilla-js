@@ -319,7 +319,6 @@ a, select , input , textarea , button{
 .header{
     background-color: $color_blue;
     padding: 1rem 1.25rem;
-    animation: fadeIn .5s;
 }
 
 /* hero starts */
@@ -761,5 +760,83 @@ a, select , input , textarea , button{
                 }
             }
         }
+    }
+}
+
+.offers{
+    display: none;
+    animation: fadeIn .5s;
+    background-color: $color_white;
+    .offers--top{
+        background: url(../img/pattern-offer.png), #CEE6FE;
+        .coupon--bg{
+            background-color: $color_white;
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 0.2rem;
+            border-top-left-radius: .8rem;
+            border-top-right-radius: .8rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+            }
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                width: 100%;
+            }
+            
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                width: 65%;
+            }
+            .coupon{
+                color: $color_green;
+                border: 3px dashed $color_green;
+                padding: 0.3rem;
+                width: 85%;
+                margin: 0 auto;
+                opacity: 0;
+                @media (max-width: 575.98px) {
+                    width: 90%;
+                }
+                @media (min-width: 576px) and (max-width: 767.98px) {
+                    width: 75%;
+                }  
+                p{
+                    @media (min-width: 321px) and (max-width: 376px) {
+                        font-size: 1rem;
+                    }      
+                    @media (max-width: 320px) {
+                        font-size: 0.8rem;
+                        span{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        
+            .fadeInUp{
+                animation-name: fadeInUp;
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+        }
+    }
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
     }
 }
