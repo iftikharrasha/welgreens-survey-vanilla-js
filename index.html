@@ -29,8 +29,8 @@
                             <div class="promo promo--sm d-flex align-items-center justify-content-center">
                                 <div class="promo--circle"></div>
                                 <img class="img-fluid" src="./img/product.png" alt="promo" id="promo--img">
-                                <img class="img-fluid" src="./img/gift icon.png" alt="box" id="box--img">
-                                <div class="progress--bar" id="progress--bar">
+                                <img class="img-fluid" src="./img/gift icon.png" alt="box" id="box--img"  style="display:none;">
+                                <div class="progress--bar" id="progress--bar"  style="display:none;">
                                     <div class="barOverflow">
                                       <div class="bar" id="bar"></div>
                                     </div>
@@ -66,6 +66,43 @@
                             </div>
                         </div>
                         
+                        <!--screen #2-->
+                        <div class="survey mb-4" id="survey">
+                            <div class="container">
+                                <div class="survey--card">
+                                    <div class="survey--inner">
+                                        <div class="question pb-3" id="question">
+                                            <h2 class="px-sm-5 py-sm-4 reg--20--2 text-center" id="questionText"></h2>
+                                        </div>
+                                        <div class="choices" id="choices">
+                                            <div id="questionBody" style="display:none;"></div>
+                                        </div>
+                                        <div class="validate" id="validate" style="display:none;">
+                                            <div class="text-center">
+                                                <img src="./img/poppers.png" alt="poppers">
+                                            </div>
+                                            <table class="validate--table text-center">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p class="fade--opacity bold--20" id="ticked1">
+                                                                Submitting answers...
+                                                            </p>
+                                                            <p class="fade--opacity my-1 bold--20" id="ticked2">
+                                                                Checking for duplicate IP addresses...
+                                                            </p>
+                                                            <p class="fade--opacity bold--20" id="ticked3">
+                                                                Checking our inventory for products...
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -363,6 +363,54 @@ a, select, input, textarea, button {
           transform: translateX(1rem);
 }
 
+.question--btn {
+  background-color: var(--color_ques_btn_bg);
+  color: var(--color_ques_btn_color);
+  border: 0.4rem solid var(--color_ques_btn_stroke);
+  font-family: var(--font2);
+  display: block;
+  width: 40%;
+  text-align: left;
+  padding: 1.2rem;
+  margin: 0 1rem;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  border-radius: .5rem;
+}
+
+@media (max-width: 575.98px) {
+  .question--btn {
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .question--btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .question--btn {
+    width: 80%;
+    margin: 0 .5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .question--btn {
+    width: 47%;
+    margin: 0 .5rem;
+  }
+}
+
+.question--btn:hover {
+  background-color: var(--color_ques_btn_hover);
+  border: 0.4rem solid #8988B2;
+}
+
 /* card settings */
 .bounty--card {
   background-position: center;
@@ -503,6 +551,10 @@ a, select, input, textarea, button {
   .hero .hero--banner .hero--title h2:after {
     right: 1rem;
   }
+}
+
+.hero .hero--banner .bounty--card {
+  /* question starts */
 }
 
 .hero .hero--banner .bounty--card .circle--wrapper {
@@ -787,6 +839,209 @@ a, select, input, textarea, button {
 
 .hero .hero--banner .bounty--card .hero--contents .timer {
   color: var(--color_red);
+}
+
+.hero .hero--banner .bounty--card .survey {
+  display: none;
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card {
+    border-radius: 4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1531.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card {
+    width: 100%;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner {
+    width: 100%;
+  }
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .progress--bar .progress--detail {
+  background: #EBEBEB;
+  overflow: hidden;
+  height: .8rem;
+  border-radius: 1rem;
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .progress--bar .progress--detail .progress {
+  background: var(--color_blue);
+  width: 0;
+  height: inherit;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .transit--down {
+  padding-top: 7rem;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .question {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .question {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .question h4 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .question h2 {
+    min-height: 6rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .question h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .choices #questionBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .choices #questionBody .letter {
+  padding: .7rem 1rem;
+  background-color: #E2E2F1;
+  border-radius: 50%;
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate {
+  -webkit-animation: fadeIn .3s;
+          animation: fadeIn .3s;
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate img {
+  position: relative;
+  bottom: 3rem;
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .validate--table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .validate--table {
+    width: 100%;
+  }
+}
+
+@media (min-width: 2500px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .validate--table {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .validate--table p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .validate--table p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .validate--table p span img {
+    width: 2rem;
+  }
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .fade--opacity {
+  opacity: .5;
+}
+
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .fade--gone {
+  color: #474747;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.hero .hero--banner .ques--card {
+  padding: 5rem 2rem 0rem 2rem;
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .ques--card {
+    padding: 0 1rem 0 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero .hero--banner .ques--card {
+    padding: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero .hero--banner .ques--card {
+    padding: 2rem 1rem 0rem 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero .hero--banner .ques--card {
+    padding: 5rem 1rem 0rem 1rem;
+  }
+}
+
+.hero .hero--banner .ques--card .circle--wrapper .promo {
+  bottom: -0.25rem;
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .ques--card .circle--wrapper .promo--sm {
+    bottom: -1.25rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero .hero--banner .ques--card .circle--wrapper .promo--sm {
+    bottom: 0.75rem;
+  }
 }
 
 .hero .expired {

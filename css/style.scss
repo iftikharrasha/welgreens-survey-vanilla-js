@@ -253,6 +253,41 @@ a, select , input , textarea , button{
     }
 }
 
+.question--btn {
+    background-color: $color_ques_btn_bg;
+    color: $color_ques_btn_color;
+    border: 0.4rem solid $color_ques_btn_stroke;
+    font-family: $font2;
+    display: block;
+    width: 40%;
+    text-align: left;
+    padding: 1.2rem;
+    margin: 0 1rem;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    @media (max-width: 575.98px) {
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    @media (max-width: 320px) {
+        font-size: 1rem;
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        width: 80%;
+        margin: 0 .5rem;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px){
+        width: 47%;
+        margin: 0 .5rem;
+    }
+    &:hover{
+        background-color: $color_ques_btn_hover;
+        border: 0.4rem solid #8988B2;
+    }
+}
+
 /* card settings */
 .bounty--card{
     background-position: center;
@@ -520,6 +555,151 @@ a, select , input , textarea , button{
                 }
                 .timer{
                     color: $color_red;
+                }
+            }
+
+            /* question starts */
+            .survey{
+                display: none;
+                animation: fadeIn .5s;
+                .survey--card{
+                    @media (max-width: 575.98px) {
+                        border-radius: 4rem;
+                        margin-top: 2rem;
+                    }
+                    @media (min-width: 1300px) and (max-width: 1531.98px){
+                        width: 100%;
+                        margin: 3rem auto;
+                    }
+                    .survey--inner{
+                        @media (max-width: 575.98px) {
+                            width: 100%;
+                        }
+                        @media (min-width: 576px) and (max-width: 991.98px) {
+                            width: 100%;
+                        }
+                        .progress--bar{
+                            .progress--detail{
+                                background: #EBEBEB;
+                                overflow: hidden;
+                                height: .8rem;
+                                border-radius: 1rem;
+                                .progress {
+                                    background: $color_blue;
+                                    width: 0;
+                                    height: inherit;
+                                    border-top-right-radius: 1rem;
+                                    border-bottom-right-radius: 1rem;
+                                    transition: 1s ease all;
+                                }
+                            }
+                        }
+                        .transit--down{
+                            padding-top: 7rem;
+                            transition: all .8s ease-in-out;
+                        }
+                        .question {
+                            width: 80%;
+                            margin: 0 auto;
+                            @media (max-width: 575.98px) {
+                                width: 100%;
+                            }
+                            h4{
+                                @media (max-width: 575.98px) {
+                                    font-size: 2rem;
+                                }
+                            }
+                            h2{
+                                @media (min-width: 767.98px) {
+                                    min-height: 6rem;
+                                }
+                                @media (max-width: 575.98px) {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                        .choices{
+                            #questionBody{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                align-items: center;
+                                .letter{
+                                    padding: .7rem 1rem;
+                                    background-color: #E2E2F1;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                        .validate{
+                            animation: fadeIn .3s;
+                            img{
+                                position: relative;
+                                bottom: 3rem;
+                            }
+                            .validate--table{
+                                width: 70%;
+                                margin: 0 auto;
+                                @media (max-width: 767.98px) {
+                                    width: 100%;
+                                }
+                                @media (min-width: 2500px) {
+                                    width: 80%;
+                                }
+                                p{
+                                    @media (max-width: 320px) {
+                                        font-size: 0.9rem;
+                                    }
+                                    @media (min-width: 321px) and (max-width: 376px) {
+                                        font-size: 1.1rem;
+                                    }
+                                    span{
+                                        img{
+                                            @media (max-width: 575.98px) {
+                                                width: 2rem;
+                                            }
+                                        }
+                                    }
+                                }             
+                            }
+                            .fade--opacity{
+                                opacity: .5;
+                            }
+                            .fade--gone{
+                                color: #474747;
+                                font-weight: 700;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ques--card{
+            padding: 5rem 2rem 0rem 2rem;
+            @media (max-width: 575.98px) {
+                padding: 0 1rem 0 1rem;
+            }
+            @media (max-width: 320px) {
+                padding: 0;
+            }
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                padding: 2rem 1rem 0rem 1rem;
+            }
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                padding: 5rem 1rem 0rem 1rem;
+            }
+            .circle--wrapper{
+                .promo{
+                    bottom: -0.25rem;
+                }
+                .promo--sm {
+                    @media (max-width: 575.98px) {
+                        bottom: -1.25rem;
+                    }
+                    @media (min-width: 576px) and (max-width: 767.98px) {
+                        bottom: 0.75rem;
+                    }
                 }
             }
         }
