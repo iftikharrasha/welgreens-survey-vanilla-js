@@ -545,19 +545,19 @@ a, select , input , textarea , button{
                         left:0;
                         bottom:0;
                         right:0;
-                        background: linear-gradient(60deg, #ffffff00 0%, #ffffff00 35%, #ffffff99 50%, #ffffff00 62%, #ffffff00 100%);
+                        z-index: 99;
+                        background: $color_shine;
                         animation-name: shimmer;
                         animation-duration: 4s;
                         animation-iteration-count: infinite;
                         background-repeat:no-repeat;
-                        border-radius: 3.5rem;
                     }
                     @keyframes shimmer {
                         0% {
-                        background-position: -62rem 0%;
+                            background-position: -60rem 0%;
                         }
                         100% {
-                        background-position: 62rem 0%;
+                            background-position: 60rem 0%;
                         }
                     }
                 }
@@ -894,9 +894,6 @@ a, select , input , textarea , button{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    @media (max-width: 575.98px) {
-                        min-height: 17rem;
-                    }
                     .product--badge{
                         position: absolute;
                         margin: 0.8rem;
@@ -906,10 +903,25 @@ a, select , input , textarea , button{
                             width: 35%;
                         }
                     }
+                    .img--inner{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            object-fit: fill;
+                            min-height: $height_of_products;
+                            @media (min-width: 992px) and (max-width: 1299.98px) {
+                                min-height: calc(var(--height_of_products) + 3rem);
+                            }
+                        }
+                    }
                 }
                 .product--desc{
                     width: 50%;
                     padding: 1rem;
+                    min-height: $height_of_products;
+                    @media (min-width: 992px) and (max-width: 1299.98px) {
+                        min-height: calc(var(--height_of_products) + 3rem);
+                    }
                     .description{
                         .rating{
                             -webkit-text-fill-color: #DC9A33;
