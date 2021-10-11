@@ -5,19 +5,21 @@
   --color_red: #D04500;
   --color_green: #4CAF50;
   --color_blue: #363563;
+  --color_grey: #474747;
   --color_black: #000000;
+  --color_landing_title: #D04500;
+  --color_header_bg: #363563;
   --color_main_bg: #F8F8F8;
+  --color_footer_bg: #363563;
+  --color_product_page_bg: #CEE6FE;
   --color_start_btn_bg:#4CAF50;
   --color_start_btn_color:#FFFFFF;
-  --color_start_btn_stroke:#73c176;
   --color_start_btn_hover:#2f9b33;
   --color_ques_btn_bg:#363563;
   --color_ques_btn_color:#FFFFFF;
-  --color_ques_btn_stroke:#737292;
   --color_ques_btn_hover:#6B6A9F;
   --color_product_btn_bg:#4CAF50;
   --color_product_btn_color:#FFFFFF;
-  --color_product_btn_stroke:#73c176;
   --color_product_btn_hover:#2f9b33;
   --font1: 'Source Sans Pro', sans-serif;
   --font2: 'Roboto', sans-serif;
@@ -187,7 +189,7 @@ a, select, input, textarea, button {
 
 @media (max-width: 376px) {
   .italic--reg--18 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -213,9 +215,9 @@ a, select, input, textarea, button {
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 320px) {
   .semi--25 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -260,7 +262,7 @@ a, select, input, textarea, button {
 
 @media (max-width: 376px) {
   .bold--18 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -269,14 +271,15 @@ a, select, input, textarea, button {
   font-weight: 700;
 }
 
+@media (max-width: 376px) {
+  .bold--20 {
+    font-size: 1rem;
+  }
+}
+
 .bold--20--2 {
   font-family: var(--font2);
   font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.bold--22 {
-  font-size: 1.375rem;
   font-weight: 700;
 }
 
@@ -336,7 +339,7 @@ a, select, input, textarea, button {
 .start--btn {
   background-color: var(--color_start_btn_bg);
   color: var(--color_start_btn_color);
-  border: 0.4rem solid var(--color_start_btn_stroke);
+  border: 0.4rem solid #ffffff26;
   border-radius: .5rem;
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
@@ -366,7 +369,7 @@ a, select, input, textarea, button {
 .question--btn {
   background-color: var(--color_ques_btn_bg);
   color: var(--color_ques_btn_color);
-  border: 0.4rem solid var(--color_ques_btn_stroke);
+  border: 0.4rem solid #ffffff26;
   font-family: var(--font2);
   display: block;
   width: 40%;
@@ -383,6 +386,12 @@ a, select, input, textarea, button {
     width: 100%;
     font-size: 1.2rem;
     margin: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .question--btn {
+    font-size: 1.1rem;
   }
 }
 
@@ -453,6 +462,12 @@ a, select, input, textarea, button {
   }
 }
 
+@media (max-width: 320px) {
+  .bounty--card {
+    padding: 3rem 0 1.5rem 0;
+  }
+}
+
 .product--btn {
   display: block;
   text-align: center;
@@ -462,7 +477,7 @@ a, select, input, textarea, button {
   font-weight: 700;
   background-color: var(--color_product_btn_bg);
   color: var(--color_product_btn_color);
-  border: 0.4rem solid var(--color_product_btn_stroke);
+  border: 0.4rem solid #ffffff26;
 }
 
 @media (max-width: 575.98px) {
@@ -485,7 +500,7 @@ a, select, input, textarea, button {
 
 /* header starts */
 .header {
-  background-color: var(--color_blue);
+  background-color: var(--color_header_bg);
   padding: 1rem 1.25rem;
   -webkit-animation: fadeIn .5s;
           animation: fadeIn .5s;
@@ -507,14 +522,8 @@ a, select, input, textarea, button {
   z-index: 1;
 }
 
-@media (max-width: 575.98px) {
-  .hero .hero--banner .hero--title {
-    padding: 3rem 0 !important;
-  }
-}
-
 .hero .hero--banner .hero--title h1 {
-  color: var(--color_red);
+  color: var(--color_landing_title);
 }
 
 .hero .hero--banner .hero--title h2 {
@@ -976,6 +985,7 @@ a, select, input, textarea, button {
 }
 
 .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate {
+  position: relative;
   -webkit-animation: fadeIn .3s;
           animation: fadeIn .3s;
 }
@@ -985,9 +995,56 @@ a, select, input, textarea, button {
   bottom: 3rem;
 }
 
+.hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .svg {
+  width: 25rem;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  pointer-events: none;
+}
+
+@media (max-width: 575.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .svg {
+    left: 5%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .svg {
+    left: 16%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .svg {
+    left: 26%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1299.98px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .svg {
+    left: 32%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .svg {
+    width: 22rem;
+    left: 0;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .svg {
+    width: 22rem;
+    left: 2%;
+  }
+}
+
 .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .validate--table {
   width: 70%;
   margin: 0 auto;
+  margin-top: 15rem;
 }
 
 @media (max-width: 767.98px) {
@@ -1025,7 +1082,7 @@ a, select, input, textarea, button {
 }
 
 .hero .hero--banner .bounty--card .survey .survey--card .survey--inner .validate .fade--gone {
-  color: #474747;
+  color: var(--color_grey);
   font-weight: 700;
   opacity: 1;
 }
@@ -1075,7 +1132,7 @@ a, select, input, textarea, button {
 }
 
 .hero .expired {
-  background-color: var(--color_blue);
+  background-color: var(--color_footer_bg);
   color: var(--color_white);
   position: fixed;
   z-index: 999;
@@ -1175,7 +1232,7 @@ a, select, input, textarea, button {
 }
 
 .offers .offers--top {
-  background: url(../img/pattern-offer.png), #CEE6FE;
+  background: url(../img/pattern-offer.png), var(--color_product_page_bg);
 }
 
 .offers .offers--top .coupon--bg {
@@ -1265,7 +1322,15 @@ a, select, input, textarea, button {
   position: relative;
   width: 50%;
   background-color: #F7F7F7;
-  min-height: 22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 575.98px) {
@@ -1277,6 +1342,8 @@ a, select, input, textarea, button {
 .offers .products .product .product--top .product--img .product--badge {
   position: absolute;
   margin: 0.8rem;
+  left: 0;
+  top: 0;
 }
 
 @media (max-width: 575.98px) {
@@ -1290,14 +1357,26 @@ a, select, input, textarea, button {
   padding: 1rem;
 }
 
-.offers .products .product .product--top .product--desc .rating {
+.offers .products .product .product--top .product--desc .description .rating {
   -webkit-text-fill-color: #DC9A33;
   -webkit-text-stroke-width: 0.07rem;
   -webkit-text-stroke-color: #C57D22;
 }
 
-.offers .products .product .product--top .product--desc .remaining {
+.offers .products .product .product--top .product--desc .description .remaining {
   color: var(--color_red);
+}
+
+.offers .products .product .product--top .product--desc .description h3 {
+  color: var(--color_grey);
+}
+
+.offers .products .product .product--top .product--desc .description p {
+  color: var(--color_grey);
+}
+
+.offers .products .product .product--top .product--desc .product--timer h6 {
+  color: var(--color_grey);
 }
 
 .offers .products .product .product--top .product--desc .product--timer h6 span {
@@ -1347,7 +1426,7 @@ a, select, input, textarea, button {
 .footer .conditions {
   width: 80%;
   margin: 0 auto;
-  color: #474747;
+  color: var(--color_grey);
 }
 
 @media (max-width: 991.98px) {
@@ -1369,7 +1448,7 @@ a, select, input, textarea, button {
 }
 
 .footer .conditions p a {
-  color: #474747;
+  color: var(--color_grey);
 }
 
 @media (max-width: 575.98px) {
@@ -1535,7 +1614,7 @@ a, select, input, textarea, button {
 }
 
 .footer--bg {
-  background: url(../img/pattern-offer.png), #CEE6FE;
+  background: url(../img/pattern-offer.png), var(--color_product_page_bg);
 }
 
 @-webkit-keyframes fadeIn {

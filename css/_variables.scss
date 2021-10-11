@@ -6,22 +6,26 @@
     --color_red: #D04500;
     --color_green: #4CAF50;
     --color_blue: #363563;
+    --color_grey: #474747;
     --color_black: #000000;
+
+    --color_landing_title: #D04500;
+
+    --color_header_bg: #363563;
     --color_main_bg: #F8F8F8;
+    --color_footer_bg: #363563;
+    --color_product_page_bg: #CEE6FE;
 
     --color_start_btn_bg:#4CAF50;
     --color_start_btn_color:#FFFFFF;
-    --color_start_btn_stroke:#73c176;
     --color_start_btn_hover:#2f9b33;
 
     --color_ques_btn_bg:#363563;
     --color_ques_btn_color:#FFFFFF;
-    --color_ques_btn_stroke:#737292;
     --color_ques_btn_hover:#6B6A9F;
 
     --color_product_btn_bg:#4CAF50;
     --color_product_btn_color:#FFFFFF;
-    --color_product_btn_stroke:#73c176;
     --color_product_btn_hover:#2f9b33;
 
     --font1: 'Source Sans Pro', sans-serif;
@@ -33,21 +37,25 @@ $color_red: var(--color_red);
 $color_green: var(--color_green);
 $color_blue: var(--color_blue);
 $color_black: var(--color_black);
+$color_grey: var(--color_grey);
+
+$color_landing_title: var(--color_landing_title);
+
+$color_header_bg: var(--color_header_bg);
 $color_main_bg: var(--color_main_bg);
+$color_footer_bg: var(--color_footer_bg);
+$color_product_page_bg: var(--color_product_page_bg);
 
 $color_start_btn_bg: var(--color_start_btn_bg);
 $color_start_btn_color: var(--color_start_btn_color);
-$color_start_btn_stroke: var(--color_start_btn_stroke);
 $color_start_btn_hover: var(--color_start_btn_hover);
 
 $color_ques_btn_bg: var(--color_ques_btn_bg);
 $color_ques_btn_color: var(--color_ques_btn_color);
-$color_ques_btn_stroke: var(--color_ques_btn_stroke);
 $color_ques_btn_hover: var(--color_ques_btn_hover);
 
 $color_product_btn_bg: var(--color_product_btn_bg);
 $color_product_btn_color: var(--color_product_btn_color);
-$color_product_btn_stroke: var(--color_product_btn_stroke);
 $color_product_btn_hover: var(--color_product_btn_hover);
 $font1: var(--font1);
 $font2: var(--font2);

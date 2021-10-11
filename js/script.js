@@ -165,6 +165,7 @@ function startSurvey() {
     //screen #2
     $('#promo--img').hide();
     $('#hero--contents').hide();
+    $('#expired').hide();
     $('#bounty').addClass('ques--card');
 
     const question = questions[0];
@@ -274,9 +275,18 @@ function nextQuestion(questionId) {
   function validateScreen() {
     $('#question').hide();
     $('#choices').hide();
+
+    var animItem = bodymovin.loadAnimation({
+      wrapper: document.getElementById('svg'),
+      animType: 'svg',
+      path: './js/success.json',
+      loop: false,
+      autoplay: false,
+    })
   
     setTimeout(function () {
       $('#validate').show();
+      animItem.play();
     }, 0);
   
     setTimeout(function () {
